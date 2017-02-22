@@ -1,9 +1,14 @@
 import React from 'react'
+import Title from './components/Title'
+import Navigation from './components/Navigation'
 
 class App extends React.Component {
   render() {
     return (
-      <h1>Hello World!</h1>
+      <div>
+        <Navigation />
+        <Title content="Tinder for Codaisseur" />
+      </div>
     )
   }
 }
