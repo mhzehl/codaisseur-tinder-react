@@ -6,6 +6,7 @@ import store, { history } from './store'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import App from './App'
 import SignUp from './users/SignUp'
+import SignIn from './users/SignIn'
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Router history={history}>
       <Route path="/" component={App}>
         <Route path="/sign-up" component={SignUp} />
+        <Route path="/sign-in" component={SignIn} />
       </Route>
     </Router>
   </Provider>,
