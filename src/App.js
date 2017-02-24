@@ -18,17 +18,14 @@ class App extends React.Component {
     return { muiTheme }
   }
 
-
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="app">
           <Navigation />
           { this.props.children }
-          <Match />
         </div>
       </MuiThemeProvider>
-
     )
   }
 }

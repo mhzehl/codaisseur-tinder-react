@@ -6,7 +6,7 @@ import './Match.sass'
 class Match extends PureComponent {
   render() {
     return(
-      <div className='match'>
+      <div className='match wrapper'>
         <Student />
         <img src={ MatchIcon } className='match-icon' />
         <Student name="Johan Ja" />
